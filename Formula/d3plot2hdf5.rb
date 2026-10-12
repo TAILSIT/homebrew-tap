@@ -6,11 +6,11 @@ class D3plot2hdf5 < Formula
   depends_on arch: :arm64
   depends_on :macos
 
-  # on_macos do
-  #   depends_on arch: :arm64
-  #   url ""
-  #   sha256 ""
-  # end
+  on_macos do
+    depends_on arch: :arm64
+    url ""
+    sha256 ""
+  end
 
   on_linux do
     depends_on arch: :x86_64
