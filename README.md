@@ -23,6 +23,7 @@ After tapping, the short form `brew install <tool>` also works, as long as the n
 
 | Formula | Description | Platforms |
 |---|---|---|
+| `polaris` | BEM solver for high-voltage electrostatic simulation | Linux, macOS (Apple Silicon) |
 | `d3plot2hdf5` | Converts LS-DYNA d3plot files to HDF5 | macOS (Apple Silicon) |
 
 ## Updating
