@@ -1,4 +1,4 @@
-class Polaris < Formula
+class TsPolaris < Formula
   desc "BEM solver for high-voltage electrostatic simulation"
   homepage "https://www.tailsit.com/polaris"
   version "1.0"
