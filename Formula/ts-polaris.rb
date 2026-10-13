@@ -12,7 +12,7 @@ class TsPolaris < Formula
 
   on_linux do
     depends_on arch: :x86_64
-    url "https://api.tailsit.com/downloads/polaris/1.0/polaris-1.0-x86_64-linux-smp.tar.gz"
+    url "https://api.tailsit.com/polaris/v1/download/linux/x86_64/smp/1.0/tar.gz"
     sha256 "3e20f163b9c4f2cd361186951dc4a5c0fc1e2c8f9d5d56b4e028092f8db5d3df"
   end
 

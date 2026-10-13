@@ -8,13 +8,13 @@ class D3plot2hdf5 < Formula
 
   on_macos do
     depends_on arch: :arm64
-    url ""
-    sha256 ""
+    url "https://api.tailsit.com/d3plot2hdf5/v1/download/macos/arm64/1.0/tar.gz"
+    sha256 "0e0b7ba8254d24842b13745cce074748fd4010d8aeb404d0a8f1323c5877d422"
   end
 
   on_linux do
     depends_on arch: :x86_64
-    url ""
+    url "https://api.tailsit.com/d3plot2hdf5/v1/download/linux/x86_64/1.0/tar.gz"
     sha256 ""
   end
 
