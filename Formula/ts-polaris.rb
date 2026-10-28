@@ -1,19 +1,24 @@
+################################################################################
+### @file      
+### @copyright © 2026 TAILSIT, Austria
+################################################################################
+
 class TsPolaris < Formula
   desc "BEM solver for high-voltage electrostatic simulation"
   homepage "https://www.tailsit.com/polaris"
-  version "1.0"
+  version "1.1"
   license :cannot_represent # free for non-commercial use, license file required
 
   on_macos do
     depends_on arch: :arm64
-    url "https://api.tailsit.com/polaris/v1/download/macos/arm64/smp/1.0/tar.gz"
-    sha256 "3e20f163b9c4f2cd361186951dc4a5c0fc1e2c8f9d5d56b4e028092f8db5d3df"
+    url "https://api.tailsit.com/software/v1/products/polaris/1.1/download?operating_system=macos&architecture=arm64&package_format=tar.gz"
+    sha256 "313245e74b671f864025bb22702ac48b6c1e3483e9659013f48396b476b461c7"
   end
 
   on_linux do
     depends_on arch: :x86_64
-    url "https://api.tailsit.com/polaris/v1/download/linux/x86_64/smp/1.0/tar.gz"
-    sha256 "3e20f163b9c4f2cd361186951dc4a5c0fc1e2c8f9d5d56b4e028092f8db5d3df"
+    url "https://api.tailsit.com/software/v1/products/polaris/1.1/download?operating_system=linux&architecture=x86_64&package_format=tar.gz"
+    sha256 "74a87acba99bebbc1e0d3acecb8c05af811e779e567e28a47f5b0fb92352cc65"
   end
 
   def install
@@ -37,5 +42,6 @@ class TsPolaris < Formula
   test do
     assert_path_exists bin/"polaris"
     assert_path_exists bin/"polaris.post"
+    system bin/"polaris", "--help"
   end
 end

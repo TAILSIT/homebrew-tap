@@ -31,7 +31,7 @@ class D3plot2hdf5 < Formula
         https://www.tailsit.com/lic/d3plot2hdf5
 
       For more information see:
-        #{ opt_prefix } / README.md
+        #{ opt_prefix }/README.md
     EOS
   end
   
